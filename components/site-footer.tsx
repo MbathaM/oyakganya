@@ -12,10 +12,15 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
+            {/* <div className="flex items-center space-x-3 mb-6">
                 <div className="w-10 h-10 bg-accent flex items-center justify-center text-primary font-serif font-bold text-xl rounded-sm">O</div>
                 <span className="text-white font-serif font-bold text-xl tracking-wide">OYAKGANYA</span>
-            </div>
+            </div> */}
+             <img
+              src="/logo2.png"
+              alt="Oyakganya Logo"
+              className="w-42 h-12 mb-6"
+            />
             <p className="mb-6 text-sm leading-relaxed max-w-md">
               Empowering Potential. Transforming Futures. <br/>
               We partner with organisations to build inclusive, high-performing workplaces.

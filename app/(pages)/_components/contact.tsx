@@ -68,7 +68,8 @@ export function Contact() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-10 h-10 bg-primary flex items-center justify-center text-white mr-5 shrink-0">
+                    {/* <div className="w-10 h-10 bg-primary flex items-center justify-center text-white mr-5 shrink-0"> */}
+                       <div className="w-10 h-10 bg-teal flex items-center justify-center text-white mr-5 shrink-0">
                         <Phone size={20} />
                     </div>
                     <div>
