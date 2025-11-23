@@ -33,10 +33,12 @@ export function Home() {
             muted
             playsInline
             className="min-w-full min-h-full absolute object-cover"
-            poster="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920"
+            // poster="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920"
+            poster="/poster.jpeg"
           >
             <source
-              src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4"
+              // src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4"
+              src="/video/project.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
