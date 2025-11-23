@@ -1,8 +1,9 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Quote, Linkedin, Award, Star } from 'lucide-react';
+import { Quote, Award, Star } from 'lucide-react';
 import Link from 'next/link';
+import { LinkedinIcon as Linkedin } from '@/components/icons';
 
 export function Founder() {
   return (
