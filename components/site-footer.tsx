@@ -68,13 +68,28 @@ export function SiteFooter() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-          <p>&copy; {new Date().getFullYear()} Oyakganya Consulting Hub. All Rights Reserved.</p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <span>Affiliated with Mphako Holdings</span>
-            <span className="w-1 h-1 bg-gray-700 rounded-full"></span>
-            <Link href="/privacy" className="hover:text-white">Privacy</Link>
-          </div>
-        </div>
+  <p>&copy; {new Date().getFullYear()} Oyakganya Consulting Hub. All Rights Reserved.</p>
+  
+  <div className="flex items-center space-x-4 mt-4 md:mt-0">
+    <span>
+      Designed by{" "}
+      <Link 
+        href="https://www.mbathamelusi.co.za" 
+        target="_blank" 
+        className="hover:text-white underline"
+      >
+        Melusi Mbatha
+      </Link>
+    </span>
+
+    {/* <span className="w-1 h-1 bg-gray-700 rounded-full"></span>
+
+    <Link href="/privacy" className="hover:text-white">
+      Privacy
+    </Link> */}
+  </div>
+</div>
+
       </div>
     </footer>
   );
