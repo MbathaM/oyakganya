@@ -49,10 +49,10 @@ export function SiteFooter() {
           <div>
             <h4 className="text-white font-bold uppercase tracking-wider text-xs mb-6">Contact</h4>
             <div className="space-y-4 text-sm">
-              <div className="flex items-start group">
+              {/* <div className="flex items-start group">
                 <MapPin size={16} className="mr-3 mt-1 shrink-0 text-accent group-hover:text-white transition-colors" />
                 <span>{addressText}</span>
-              </div>
+              </div> */}
               <div className="flex items-center group">
                 <Phone size={16} className="mr-3 text-accent group-hover:text-white transition-colors" />
                 <span>{siteConfig.author.phone}</span>

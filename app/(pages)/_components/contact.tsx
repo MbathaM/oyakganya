@@ -48,13 +48,13 @@ export function Contact() {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-8">Contact Information</h2>
                 <div className="space-y-8">
                   <div className="flex items-start">
-                    <div className="w-10 h-10 bg-accent flex items-center justify-center text-primary mr-5 shrink-0">
+                    {/* <div className="w-10 h-10 bg-accent flex items-center justify-center text-primary mr-5 shrink-0">
                         <MapPin size={20} />
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                         <h3 className="font-bold text-gray-900 mb-1">Our Office</h3>
                         <p className="text-gray-600 max-w-xs">{addressText}</p>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="flex items-start">
