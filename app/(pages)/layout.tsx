@@ -2,6 +2,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { ReactNode } from 'react';
 import { TransitionComponent } from '@/components/transition';
+import ChatWidget from '@/components/chat-widget';
 
 export default async function PagesLayout({ children }: { children: ReactNode }) {
   return (
@@ -11,7 +12,7 @@ export default async function PagesLayout({ children }: { children: ReactNode })
         <TransitionComponent>
           {children}
         </TransitionComponent>
-
+        <ChatWidget />
         <SiteFooter />
       </main>
     </div>
