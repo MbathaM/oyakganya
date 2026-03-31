@@ -2,49 +2,27 @@ import type { Metadata, Viewport } from "next";
 
 import { META_THEME_COLORS, siteConfig } from "@/config/site";
 import { fontVariables } from "@/config/fonts";
-
+import { Providers } from '@/providers';
+import '@/styles/globals.css';
+import { SiteMetadata } from "@/config/metadata";
+import { Outfit } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-import "@/styles/globals.css";
-
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+const outfit = Outfit({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`,
   },
-  metadataBase: siteConfig.url,
-  description: siteConfig.description,
-  keywords: [...siteConfig.keywords],
-  authors: [
-    {
-      name: siteConfig.author.name,
-      url: siteConfig.author.url,
-    },
-  ],
-  creator: siteConfig.author.name,
-  openGraph: {
-    type: "website",
-    locale: "en_ZA",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    creator: siteConfig.author.name,
-  },
+  ...SiteMetadata,
 };
 
 export const viewport: Viewport = {
-  themeColor: {
-    color: META_THEME_COLORS.light,
-  },
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: META_THEME_COLORS.light },
+    { media: '(prefers-color-scheme: dark)', color: META_THEME_COLORS.dark },
+  ],
 };
 
 export default async function RootLayout({
@@ -53,10 +31,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={cn(fontVariables, "font-sans", outfit.variable)} suppressHydrationWarning>
       <head>
-        <meta charSet="utf-8" />
-        {/* Preconnect to critical third-party origins for faster initial requests */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -68,26 +44,37 @@ export default async function RootLayout({
                   document.documentElement.classList.add('layout-' + localStorage.layout)
                 }
               } catch (_) {}
-              `,
+            `,
           }}
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content={META_THEME_COLORS.light} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: siteConfig.name,
+              url: siteConfig.url,
+              jobTitle: "HR Consulting • Business Development • Life Coaching",
+              email: siteConfig.author.email,
+              telephone: siteConfig.author.phone,
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "South Africa",
+              },
+              sameAs: [
+                siteConfig.links.github,
+                siteConfig.links.twitter
+              ],
+            }),
+          }}
+        />
       </head>
-      <body
-        className={cn(
-          "min-h-screen overscroll-none overflow-x-hidden m-0 p-0 antialiased",
-          fontVariables
-        )}
-      >
-        <div className="flex min-h-screen flex-col">
-          <SiteHeader />
-          <main className="flex-1 relative">
-            {children}
-
-            <SiteFooter />
-          </main>
-        </div>
+      <body className="antialiased">
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

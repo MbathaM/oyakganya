@@ -87,8 +87,8 @@ export function About() {
                 We strive to be the leading and trusted partner in personal transformation and organisational development. Our vision is to uplift individuals and equip organisations through solutions that are strategic, human-centred, and anchored in long-term growth.
             </p>
             <ul className="space-y-3 text-gray-300 font-light text-base">
-              <li>• Individuals rise with clarity, self-leadership, and confidence.</li>
-              <li>• Organisations thrive through inclusive practices and strong foundations.</li>
+              <li>• Individuals rise with clarity, self-leadership, and renewed confidence.</li>
+              <li>• Organisations thrive through strong HR foundations, inclusive practices, and intentional people strategies.</li>
               <li>• Professionals present themselves with excellence.</li>
             </ul>
           </motion.div>

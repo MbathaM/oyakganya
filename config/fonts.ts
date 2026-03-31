@@ -27,8 +27,8 @@ const playfair_display = Playfair_Display({
 
 export const fontVariables = cn(
   // geist.className,
-  // lato.variable,
-  playfair_display.variable,
+  lato.variable,
+  // playfair_display.variable,
   // geist_mono.className,
 )
 
