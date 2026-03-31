@@ -56,7 +56,7 @@ export function Founder() {
                         Onkabetse Mphako, founder of Oyakganya Consulting Hub, is a people-focused coach and HR professional dedicated to guiding individuals and organisations toward clarity, confidence, and strategic growth.
                     </p>
                     <p>
-                        With experience rooted in HR compliance, workforce development, and coaching psychology, she helps clients shift from self-doubt to purposeful action.
+                        With experience rooted in HR compliance, workforce development, and coaching, she helps clients shift from self-doubt to purposeful action.
                     </p>
                     <p>
                         Her approach integrates empathy with structure, combining professional insight with human-centred coaching to deliver meaningful, sustainable transformation.
@@ -71,7 +71,7 @@ export function Founder() {
                     </div>
                     <div className="border-l-4 border-accent p-6 bg-slate-50">
                         <Star className="text-accent mb-4 w-8 h-8" />
-                        <h4 className="font-bold text-primary text-lg mb-2">Coaching Psychology</h4>
+                        <h4 className="font-bold text-primary text-lg mb-2">Coaching</h4>
                         <p className="text-gray-600">Helping clients achieve clarity and confidence.</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ export function Founder() {
                  <div className="bg-primary text-white p-10 relative overflow-hidden shadow-2xl">
                     <Quote className="text-accent absolute top-6 right-6 opacity-20 w-20 h-20" />
                     <p className="text-2xl font-serif italic mb-8 relative z-10 leading-relaxed">
-                        "Transformation is not just about changing what you do; it's about evolving who you are and how you show up."
+                        &quot;Transformation is not just about changing what you do; it&apos;s about evolving who you are and how you show up.&quot;
                     </p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-primary font-bold text-xl">O</div>

@@ -1,9 +1,8 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Quote, ArrowRight, Star } from 'lucide-react';
-import Link from 'next/link';
 import { TESTIMONIALS } from '@/config/constants';
+import { motion } from 'framer-motion';
+import { ArrowRight, Quote, Star } from 'lucide-react';
+import Link from 'next/link';
 
 export function Testimonials() {
   return (
@@ -16,7 +15,7 @@ export function Testimonials() {
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Client Testimonials</h1>
           <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-            Hear from the leaders and organisations we've partnered with to drive transformation, inclusivity, and sustainable growth.
+            Hear from the leaders and organisations we&apos;ve partnered with to drive transformation, inclusivity, and sustainable growth.
           </p>
         </div>
       </div>
@@ -42,7 +41,7 @@ export function Testimonials() {
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-8 italic text-lg grow relative z-10">
-                "{item.quote}"
+                &quot;{item.quote}&quot;
               </p>
 
               <div className="flex items-center gap-4 border-t border-gray-200 pt-6">
@@ -65,7 +64,7 @@ export function Testimonials() {
          <div className="container mx-auto px-4 text-center">
              <h2 className="text-3xl font-serif font-bold text-white mb-6">Join Our Success Stories</h2>
              <p className="text-gray-400 mb-10 max-w-2xl mx-auto text-lg font-light">
-                 Ready to experience the Oyakganya difference? Let's discuss how we can help your organisation thrive through tailored HR and leadership solutions.
+                 Ready to experience the Oyakganya difference? Let&apos;s discuss how we can help your organisation thrive through tailored HR and leadership solutions.
              </p>
             <Link href="/contact" className="inline-flex items-center bg-accent hover:bg-white hover:text-primary text-primary font-bold py-4 px-10 transition-all shadow-xl hover:shadow-2xl rounded-sm">
                 Start Your Journey <ArrowRight className="ml-2" size={18} />

@@ -25,7 +25,7 @@ export function Contact() {
     });
   };
 
-  const addressText = `${siteConfig.address.building}, ${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.province} ${siteConfig.address.postcode}, ${siteConfig.address.country}`;
+  // const addressText = `${siteConfig.address.building}, ${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.province} ${siteConfig.address.postcode}, ${siteConfig.address.country}`;
 
   return (
     <div className="min-h-screen bg-white">
@@ -33,7 +33,7 @@ export function Contact() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-serif font-bold mb-4">Get In Touch</h1>
           <p className="text-xl opacity-80 font-light">
-             Ready to transform your organisation? We'd love to hear from you.
+             Ready to transform your organisation? We&apos;d love to hear from you.
           </p>
         </div>
       </div>

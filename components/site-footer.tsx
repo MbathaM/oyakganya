@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 
 export function SiteFooter() {
-  const addressText = `${siteConfig.address.building}, ${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.province} ${siteConfig.address.postcode}, ${siteConfig.address.country}`;
+  // const addressText = `${siteConfig.address.building}, ${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.province} ${siteConfig.address.postcode}, ${siteConfig.address.country}`;
   return (
     <footer className="bg-primary-dark text-gray-400 pt-16 pb-8 border-t border-gray-800">
       <div className="container mx-auto px-4">

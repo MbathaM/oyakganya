@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-import { Check, ArrowRight } from "lucide-react";
 import { SERVICES } from "@/config/constants";
+import { motion } from "framer-motion";
+import { ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export function Services() {
   return (
@@ -33,9 +33,8 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`flex flex-col md:flex-row gap-16 items-center ${
-                index % 2 === 1 ? "md:flex-row-reverse" : ""
-              }`}
+              className={`flex flex-col md:flex-row gap-16 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+                }`}
             >
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-6">
@@ -67,14 +66,18 @@ export function Services() {
                 </ul>
               </div>
 
+
+
               <div className="flex-1 w-full relative group">
                 <div className="absolute top-4 left-4 w-full h-full border-2 border-accent z-0 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+
                 <div className="relative z-10 aspect-square overflow-hidden shadow-2xl bg-gray-200">
-                  <img
-                    // src={`https://picsum.photos/800/800?random=${index + 10}`}
+                  <Image
                     src={`/images/${index + 1}.jpeg`}
                     alt={service.title}
-                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                    fill
+                    className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
               </div>

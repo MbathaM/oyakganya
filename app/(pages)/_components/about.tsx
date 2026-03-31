@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
 import { CORE_VALUES } from '@/config/constants';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export function About() {
   return (
@@ -25,17 +25,21 @@ export function About() {
       <div className="container mx-auto px-4 py-20">
         {/* Story Section */}
         <div className="flex flex-col md:flex-row gap-16 items-center mb-32">
-            <div className="md:w-1/2 relative">
-                <div className="aspect-4/3 bg-gray-200 overflow-hidden shadow-lg relative z-10">
-                    <img 
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
-                        alt="Diverse Team Collaborating" 
-                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    />
-                </div>
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent z-20 hidden md:block"></div>
-                <div className="absolute -top-6 -left-6 w-full h-full border border-gray-200 z-0"></div>
-            </div>
+
+<div className="md:w-1/2 relative">
+  <div className="aspect-[4/3] bg-gray-200 overflow-hidden shadow-lg relative z-10">
+    <Image
+      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+      alt="Diverse Team Collaborating"
+      fill
+      className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
+  </div>
+
+  <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent z-20 hidden md:block"></div>
+  <div className="absolute -top-6 -left-6 w-full h-full border border-gray-200 z-0"></div>
+</div>
             <div className="md:w-1/2">
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Approach</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">

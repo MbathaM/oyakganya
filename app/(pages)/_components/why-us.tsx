@@ -1,7 +1,6 @@
 "use client";
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Star, Shield, Users, LineChart, CheckSquare, Zap, UserCheck, Layers } from 'lucide-react';
+import { CheckSquare, Layers, Shield, Star, UserCheck, Users, Zap } from 'lucide-react';
 
 export function WhyUs() {
   // Competitive Advantages from PDF Section 6

@@ -15,14 +15,14 @@ export const siteConfig = {
     phone: "+27 82 878 9010",
   },
 
-  address: {
-    building: "Oyakganya Consulting Hub",
-    street: "17 Marhope Street, Tlhahane West",
-    country: "South Africa",
-    city: "Rustenburg",
-    province: "North West",
-    postcode: "0299",
-  },
+  // address: {
+  //   building: "Oyakganya Consulting Hub",
+  //   street: "17 Marhope Street, Tlhahane West",
+  //   country: "South Africa",
+  //   city: "Rustenburg",
+  //   province: "North West",
+  //   postcode: "0299",
+  // },
 
   links: {
     twitter: "",
