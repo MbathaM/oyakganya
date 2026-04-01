@@ -17,9 +17,8 @@ export const SERVICES: ServiceItem[] = [
       "Unlocking potential through confidence, clarity, and strategic intention.",
     icon: Brain, // Using a brain icon or similar for mindset
     details: [
-      "Confidence & Mindset Coaching (6 weeks)",
+      "Confidence & Mindset Coaching",
       "Career Coaching",
-      "Limiting Beliefs Coaching",
       "Self-leadership and Personal Strategy Sessions",
     ],
   },
@@ -29,8 +28,6 @@ export const SERVICES: ServiceItem[] = [
       "Strengthening people systems with compliance and inclusivity.",
     icon: Users,
     details: [
-      "Employment Equity Compliance",
-      "HR Policies & Procedures Development",
       "Recruitment & Talent Acquisition (including Job Descriptions)",
       "Talent Management",
     ],
@@ -147,7 +144,7 @@ This is a **transformation-first** practice, not just a service provider.
 
 📦 SERVICES (ONLY THESE — DO NOT INVENT):
 1. Coaching Services:
-   - Confidence & Mindset Coaching (6 weeks)
+   - Confidence & Mindset Coaching
    - Career Coaching
    - Self-leadership & Personal Strategy Sessions
 
