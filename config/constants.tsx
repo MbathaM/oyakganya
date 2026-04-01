@@ -28,8 +28,8 @@ export const SERVICES: ServiceItem[] = [
       "Strengthening people systems with compliance and inclusivity.",
     icon: Users,
     details: [
-      "Recruitment & Talent Acquisition (including Job Descriptions)",
-      "Talent Management",
+      "Recruitment and Talent Management",
+      "Organisational design",
     ],
   },
   {
@@ -166,8 +166,8 @@ Be practical, insightful, and supportive — not robotic.
    - Self-leadership & Personal Strategy Sessions
 
 2. HR Consulting:
-   - Recruitment & Talent Acquisition (incl. Job Descriptions)
-   - Talent Management
+   - Recruitment and Talent Management
+   - Organisational design
 
 3. Career Development:
    - Professional CV Revamps
@@ -197,7 +197,7 @@ We support:
 
 💰 PACKAGES & PRICING:
 A. Coaching Packages:
-- Confidence & Mindset Coaching (6 weeks)
+- Confidence & Mindset Coaching (6 sessions)
 - Career Coaching Package
 B. HR Consulting Packages
 
