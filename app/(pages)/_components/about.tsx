@@ -46,7 +46,7 @@ export function About() {
                     We partner with clients to unlock potential, strengthen people systems, and cultivate environments where both personal and organisational growth can thrive.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                    Our work integrates coaching psychology, HR compliance expertise, and behavioural insight to create solutions that are deeply human, purposeful, and results-focused.
+                    Our work integrates coaching, HR compliance expertise, and behavioural insight to create solutions that are deeply human, purposeful, and results-focused.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed pl-6 border-l-2 border-accent">
                     Through our coaching programmes, organisational services, and professional career support—including strategic CV revamps—we guide clients from uncertainty to intentional, empowered action.
@@ -71,9 +71,10 @@ export function About() {
             </p>
             <p className="text-sm text-gray-400 font-bold uppercase tracking-wider">We commit to:</p>
             <ul className="mt-3 space-y-2 text-gray-300 text-sm">
-                <li>• Providing personalised services rooted in the GRACE values.</li>
-                <li>• Building compliant, inclusive, people-centred workplaces.</li>
-                <li>• Creating psychologically safe, supportive spaces.</li>
+                <li>• Providing personalised, ethical, high-quality services rooted in the GRACE values framework.</li>
+                <li>• Supporting organisations in building compliant, inclusive, and people-centred workplaces.</li>
+                <li>• Empowering professionals to present themselves boldly through enhanced career branding and strategic CV revamps.</li>
+                <li>• Creating psychologically safe, supportive, and strategic spaces for self-leadership and organisational alignment.</li>
             </ul>
           </motion.div>
 
@@ -93,7 +94,7 @@ export function About() {
             <ul className="space-y-3 text-gray-300 font-light text-base">
               <li>• Individuals rise with clarity, self-leadership, and renewed confidence.</li>
               <li>• Organisations thrive through strong HR foundations, inclusive practices, and intentional people strategies.</li>
-              <li>• Professionals present themselves with excellence.</li>
+              <li>• Professionals present themselves with excellence and pursue meaningful career opportunities.</li>
             </ul>
           </motion.div>
         </div>
