@@ -114,8 +114,21 @@ export function Founder() {
                         <h2 className="text-4xl font-serif font-bold text-primary mt-3">Moments of Impact</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
-                        <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-sm shadow-lg">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-auto md:h-[600px] lg:h-[700px]">
+                        {/* Video */}
+                        <div className="relative group overflow-hidden rounded-sm shadow-lg bg-gray-900 aspect-video md:aspect-auto">
+                             <iframe 
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/lu-QznD0D-E?si=VCXggYVbjgRIChFd" 
+                                title="Moments of Impact Video" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+
+                        {/* Image 1 */}
+                        <div className="relative group overflow-hidden rounded-sm shadow-lg aspect-square md:aspect-auto">
                             <img
                                 src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
                                 alt="Speaking Engagement and Facilitation"
@@ -126,25 +139,27 @@ export function Founder() {
                             </div>
                         </div>
 
-                        <div className="relative group overflow-hidden rounded-sm shadow-lg">
+                        {/* Image 2 */}
+                        <div className="relative group overflow-hidden rounded-sm shadow-lg aspect-square md:aspect-auto">
                             <img
                                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                 alt="Team Coaching and Collaboration"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-teal/80 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                                <p className="text-white font-bold">Team Coaching</p>
+                                <p className="text-white font-bold text-lg">Team Coaching</p>
                             </div>
                         </div>
 
-                        <div className="relative group overflow-hidden rounded-sm shadow-lg">
+                        {/* Image 3 */}
+                        <div className="relative group overflow-hidden rounded-sm shadow-lg aspect-square md:aspect-auto">
                             <img
                                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                 alt="Strategic Planning Session"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-accent/80 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-                                <p className="text-white font-bold">Strategic Planning</p>
+                                <p className="text-white font-bold text-lg">Strategic Planning</p>
                             </div>
                         </div>
                     </div>
