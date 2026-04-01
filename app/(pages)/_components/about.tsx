@@ -16,7 +16,7 @@ export function About() {
             <span className="text-accent font-bold tracking-widest uppercase text-sm block mb-4">Company Overview</span>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-8">Transformation-Driven Coaching & HR</h1>
             <p className="text-xl text-gray-600 leading-relaxed font-light">
-                Oyakganya Consulting Hub is a transformation-driven coaching and HR consulting practice dedicated to elevating individuals and organisations through clarity, confidence, and strategic intention.
+                Oyakganya Consulting Hub is a Level 1 B-BBEE, black female-owned, transformation-driven coaching and HR consulting practice dedicated to elevating individuals and organisations through clarity, confidence, and strategic intention.
             </p>
           </motion.div>
         </div>
